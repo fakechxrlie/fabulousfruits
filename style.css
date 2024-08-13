@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://wallpaper.forfun.com/fetch/48/483613bbb44c346fcd89ecf7ea013d4a.jpeg'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#slot-machine {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.row {
+    padding: 10px 0;
+}
+
+.slot {
+    font-size: 2em;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#balance {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+#bet-amount, #auto-spin-count {
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 1em;
+    width: 80px;
+}
